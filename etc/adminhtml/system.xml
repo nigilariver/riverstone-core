@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="riverstoneinfotech" translate="label" sortOrder="100" class="riverstoneinfotech-logo">
+            <label>Riverstone</label>
+        </tab>
+        <section id="riverstonecore_section" translate="label" type="text" sortOrder="8888" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Information</label>
+            <tab>riverstoneinfotech</tab>
+            <resource>Riverstone_Core::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="showmenu" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Riverstone Menu</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Riverstone\Core\Model\Config\Backend\Menu</backend_model>
+                    <comment>If yes, the Riverstone Infotech menu will be displayed on the admin navigation. All of the Riverstone module menu will be displayed there.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
