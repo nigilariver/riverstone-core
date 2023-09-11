@@ -11,7 +11,7 @@ Run the following command in Magento 2 root folder.
 #### 1.1 Install
 
 ```
-composer require riverstonetech/module-core
+composer require riverstone/module-core
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy
 ```
@@ -19,7 +19,7 @@ php bin/magento setup:static-content:deploy
 #### 1.2 Upgrade
 
 ```
-composer update riverstonetech/module-core
+composer update riverstone/module-core
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy
 ```
