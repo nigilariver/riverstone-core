@@ -13,7 +13,7 @@ class Userguide extends Action
     /**
      * Authorization level of a basic admin session
      */
-    protected const ADMIN_RESOURCE = 'Riverstone_Core::userguide';
+    public const ADMIN_RESOURCE = 'Riverstone_Core::userguide';
 
     /**
      * Controller execution file
