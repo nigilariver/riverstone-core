@@ -3,9 +3,16 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
+                <resource id="Riverstone_Core::menu" title="Riverstone Extensions" sortOrder="50">
+                    <resource id="Riverstone_Core::documentation" title="Documentations" sortOrder="50">
+                        <resource id="Riverstone_Core::userguide" title="User Guides" sortOrder="50"/>
+                    </resource>
+                </resource>
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
-                        <resource id="Riverstone_Core::config"></resource>
+                        <resource id="Magento_Config::config">
+                            <resource id="Riverstone_Core::configuration" title="Riverstone Information" sortOrder="10"/>
+                        </resource>
                     </resource>
                 </resource>
             </resource>
