@@ -3,7 +3,7 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Riverstone_Core::menu" title="Riverstone Extensions" sortOrder="50">
+                <resource id="Riverstone_Core::riverstone" title="Riverstone Extensions" sortOrder="50">
                     <resource id="Riverstone_Core::documentation" title="Documentations" sortOrder="50">
                         <resource id="Riverstone_Core::userguide" title="User Guides" sortOrder="50"/>
                     </resource>
