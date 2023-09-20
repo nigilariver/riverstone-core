@@ -6,8 +6,6 @@ use Magento\Store\Model\ScopeInterface;
 class AbstractData extends \Magento\Framework\App\Helper\AbstractHelper
 {
 
-    protected const XML_PATH_EXTENSION_STATUS = 'riverstonecore_section/general/enable';
-
     protected const XML_PATH_SHOW_MENU = 'riverstonecore_section/general/showmenu';
     
     /**
@@ -49,19 +47,7 @@ class AbstractData extends \Magento\Framework\App\Helper\AbstractHelper
     }
 
     /**
-     * Checking module status
-
-     * @return int
-     */
-    public function getModuleStatus()
-    {
-        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
-        $moduleStatus = $this->scopeConfig->getValue(self::XML_PATH_EXTENSION_STATUS, $storeScope);
-        return $moduleStatus;
-    }
-
-    /**
-     * Checking module status
+     * Checking menu status
 
      * @return int
      */
@@ -71,26 +57,4 @@ class AbstractData extends \Magento\Framework\App\Helper\AbstractHelper
         $moduleStatus = $this->scopeConfig->getValue(self::XML_PATH_SHOW_MENU, $storeScope);
         return $moduleStatus;
     }
-
-    // /**
-    //  * Getting tracking url
-
-    //  * @param string $carrierCode
-    //  * @param int $trackingNumber
-    //  * @return string
-    //  */
-    // public function getTrackingUrl($carrierCode, $trackingNumber)
-    // {
-    //     $trackApiData = $this->getTrackingAdminData();
-
-    //     $trackUrl = '';
-
-    //     foreach ($trackApiData as $trackData):
-    //         if ($trackData['code'] == $carrierCode):
-    //             $trackUrl = str_replace('$trackingnumber', $trackingNumber, $trackData['url']);
-    //         endif;
-    //     endforeach;
-
-    //     return $trackUrl;
-    // }
 }
