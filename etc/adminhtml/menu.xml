@@ -22,8 +22,8 @@
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Riverstone_Core::menu" title="Riverstone Infotech" module="Riverstone_Core" sortOrder="50" resource="Riverstone_Core::menu"/>
-        <add id="Riverstone_Core::documentation" title="Documentation" module="Riverstone_Core" sortOrder="20" resource="Riverstone_Core::documentation" parent="Riverstone_Core::menu"/>
+        <add id="Riverstone_Core::riverstone" title="Riverstone Infotech" module="Riverstone_Core" sortOrder="50" resource="Riverstone_Core::riverstone"/>
+        <add id="Riverstone_Core::documentation" title="Documentation" module="Riverstone_Core" sortOrder="20" resource="Riverstone_Core::documentation" parent="Riverstone_Core::riverstone"/>
         <add id="Riverstone_Core::userguide" title="User Guides" module="Riverstone_Core" sortOrder="20" action="riverstonecore/index/userguide" resource="Riverstone_Core::userguide" parent="Riverstone_Core::documentation"/>
     </menu>
 </config>
