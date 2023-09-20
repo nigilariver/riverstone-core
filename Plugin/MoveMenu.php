@@ -9,7 +9,7 @@ use Riverstone\Core\Helper\AbstractData;
  */
 class MoveMenu
 {
-    protected const RIVERSTONE_CORE = 'Riverstone_Core::menu';
+    protected const RIVERSTONE_CORE = 'Riverstone_Core::riverstone';
 
     /**
      * @var AbstractData
